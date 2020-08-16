@@ -3,21 +3,26 @@
     <h1>{{ msg }}</h1> 
     <Todo />
     <Common />
+    <Cards />
+    
   </div>
 </template>
 
 <script>
 import Todo from "./Todo.vue";
 import Common from "./Common.vue";
+import Cards from "./Cards.vue";
 
 export default {
   name: "Content",
+
   props: {
     msg: String
   },
   components: {
     Todo,
-    Common
+    Common,
+    Cards
   }
 };
 </script>
