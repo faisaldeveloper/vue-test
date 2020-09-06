@@ -2,8 +2,14 @@
    <div>
       <b-navbar toggleable="lg" type="dark" variant="success">
         <b-container>
-            <b-navbar-brand href="#">Mealzers</b-navbar-brand>
-            <b-navbar-brand href="#orders">Orders</b-navbar-brand>
+            <!-- <b-navbar-brand href="#">Mealzers</b-navbar-brand>
+            <b-navbar-brand href="#orders">Orders</b-navbar-brand> -->
+            <router-link class="navbar-brand" to="/">Mealzers</router-link>
+            <router-link class="navbar-brand" to="/order">Orders</router-link> 
+            <router-link class="navbar-brand" to="/todo">Todo</router-link>  
+            <router-link class="navbar-brand" to="/maps">Maps</router-link>  
+            <router-link class="navbar-brand" to="/about">About</router-link>
+
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
               <!-- Right aligned nav items -->
@@ -32,6 +38,7 @@
             </b-collapse>
           </b-container>
       </b-navbar>
+
     </div>  
 </template>
 
@@ -43,7 +50,6 @@ export default {
   }
 };
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {

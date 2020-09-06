@@ -1,28 +1,17 @@
 <template>
   <div class="main-content">
-    <h1>{{ msg }}</h1> 
-    <Todo />
-    <Common />
-    <Cards />
-    
+    <!-- Routes get rendered here -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Todo from "./Todo.vue";
-import Common from "./Common.vue";
-import Cards from "./Cards.vue";
 
 export default {
   name: "Content",
 
   props: {
     msg: String
-  },
-  components: {
-    Todo,
-    Common,
-    Cards
   }
 };
 </script>

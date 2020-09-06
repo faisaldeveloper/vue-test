@@ -1,16 +1,12 @@
 <template>
-  <div class="main-todo">
-    <h1>{{ msg }}</h1> 
-    <p>This is todo page.</p>
+  <div class="main-about">
+    <p> This is about page.</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Todo",
-  props: {
-    msg: String
-  }
+  name: "About"
 };
 </script>
 
@@ -19,5 +15,4 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
-
 </style>
