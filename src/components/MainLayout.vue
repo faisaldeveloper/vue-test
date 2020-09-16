@@ -1,16 +1,19 @@
 <template>
-  <div id="app">
-    <MainLayout />
+  <div id="main-app">
+    <Header msg="Welcome to Todo App" />
+    <Content sg="Welcome 2 Todo App" />
   </div>
 </template>
 
 <script>
-import MainLayout from "./components/MainLayout.vue";
+import Header from "./Header.vue";
+import Content from "./Content.vue";
 
 export default {
-  name: "App",
+  name: "MainLayout",
   components: {
-    MainLayout
+    Header,
+    Content
   }
 };
 </script>

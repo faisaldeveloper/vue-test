@@ -1,7 +1,9 @@
 <template>
   <div class="main-content">
     <!-- Routes get rendered here -->
-    <router-view></router-view>
+    <router-view @commsg="updateme"></router-view>
+    <br><br>
+    <p>{{ rootmsg }}</p>
   </div>
 </template>
 
@@ -12,6 +14,18 @@ export default {
 
   props: {
     msg: String
+  },
+  data(){
+    return {
+      rootmsg: "This is Content component"
+    }
+  },
+  methods: {
+    updateme(x){
+      //this.myvar = 'nodatinedddd';
+      //alert('I am updating.'+x);
+      this.rootmsg = x;
+    }
   }
 };
 </script>

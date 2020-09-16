@@ -32,12 +32,10 @@
 <script>
 export default {
   name: "Common",
-  prop:{
-    msg2: 'Common Tasks'
-  },
   data(){
     return {
       //msg2 : "whats going on guys.",
+      msg2: 'Common Tasks',
       attachRed: false,
       attachGreen: false,
       attachYellow: false,
