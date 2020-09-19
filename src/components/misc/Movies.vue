@@ -68,7 +68,7 @@
     },
     methods: {
       getResult(query) {
-       const key = process.env.MOVIES_KEY;
+       const key = process.env.VUE_APP_MOVIES_KEY;
        //console.log(query)
        axios.get('https://api.themoviedb.org/3/search/movie?api_key='+key+'&query=' + query)
        .then(response => { 
